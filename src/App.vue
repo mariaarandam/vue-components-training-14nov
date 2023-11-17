@@ -1,7 +1,9 @@
 <script setup>
+
 import IdCard from './components/IdCard.vue';
 import Random from './components/Random.vue';
-import BoxColor from './components/BoxColor.vue'
+import BoxColor from './components/BoxColor.vue';
+import LikeButton from './components/LikeButton.vue';
 
 
 
@@ -34,10 +36,16 @@ import BoxColor from './components/BoxColor.vue'
   <section>
     <h2>BoxColor</h2>
       <BoxColor :r="255" :g="0" :b="0" />
-      <BoxColor :r="128" :g="255" :b="0" />
+      <BoxColor :r="128"
+       :g="255" :b="0" />
       <BoxColor :r="0" :g="120" :b="0" />
       <BoxColor :r="255" :g="129" :b="129" />
-      
+  </section>
+
+  <section>
+    <h2>State</h2>
+      <LikeButton likes/>
+      <LikeButton likes/>
   </section>
 
 </template>
